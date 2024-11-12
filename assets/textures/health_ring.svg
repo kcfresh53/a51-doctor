@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64mm"
+   height="64mm"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="health_ring.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.0690236"
+     inkscape:cx="63.141732"
+     inkscape:cy="92.607874"
+     inkscape:window-width="1536"
+     inkscape:window-height="808"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="0,99.999982"
+       orientation="0,7800.9449"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="2064,99.999982"
+       orientation="7800.9449,0"
+       id="guide2"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="2064,-1964"
+       orientation="0,-7800.9449"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,-1964"
+       orientation="-7800.9449,0"
+       id="guide4"
+       inkscape:locked="false" />
+    <inkscape:grid
+       id="grid4"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="1.6"
+       spacingy="1.6"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+    <sodipodi:guide
+       position="0,99.999999"
+       orientation="0,1889.7638"
+       id="guide5"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="499.99999,99.999999"
+       orientation="1889.7638,0"
+       id="guide6"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="499.99999,-400"
+       orientation="0,-1889.7638"
+       id="guide7"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,-400"
+       orientation="-1889.7638,0"
+       id="guide8"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,63.999998"
+       orientation="0,241.88976"
+       id="guide9"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="63.999998,63.999998"
+       orientation="241.88976,0"
+       id="guide10"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="63.999998,0"
+       orientation="0,-241.88976"
+       id="guide11"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-241.88976,0"
+       id="guide12"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="HealthRing"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="matrix(0.29230766,0,0,0.29230766,-64.123031,-56.123061)">
+    <path
+       id="path4"
+       style="fill:#bf4040;fill-opacity:1;stroke-width:0.0280668"
+       d="M 328.84198,192.00002 A 109.47371,109.47366 0 0 0 219.36829,301.47367 109.47371,109.47366 0 0 0 328.84198,410.94731 109.47371,109.47366 0 0 0 438.31568,301.47367 109.47371,109.47366 0 0 0 328.84198,192.00002 Z m 0,15.63908 a 93.834607,93.834564 0 0 1 93.83461,93.83457 93.834607,93.834564 0 0 1 -93.83461,93.83454 93.834607,93.834564 0 0 1 -93.8346,-93.83454 93.834607,93.834564 0 0 1 93.8346,-93.83457 z" />
+  </g>
+</svg>

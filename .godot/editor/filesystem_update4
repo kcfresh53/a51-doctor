@@ -1,6 +1,9 @@
-res://default_env.tres
-res://game/main.tscn
+res://scenes/levels/testing_zone.tscn
 res://openxr_action_map.tres
+res://addons/godot-xr-tools/hands/animations/left/hand_blend_tree.tres
+res://addons/godot-xr-tools/hands/animations/right/hand_blend_tree.tres
+res://scenes/levels/start_zone.tscn
+res://scenes/levels/main.tscn
 res://addons/godot-xr-tools/staging/loading_screen/loading_screen_shader.tres
 res://addons/godot-xr-tools/misc/hold_button_visualshader.tres
 res://addons/godot-xr-tools/materials/highlight.tres

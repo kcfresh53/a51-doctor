@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64mm"
+   height="64mm"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="health.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="3.0217733"
+     inkscape:cx="73.632261"
+     inkscape:cy="129.39422"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="0,63.999998"
+       orientation="0,241.88976"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="63.999998,63.999998"
+       orientation="241.88976,0"
+       id="guide2"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="63.999998,0"
+       orientation="0,-241.88976"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-241.88976,0"
+       id="guide4"
+       inkscape:locked="false" />
+    <inkscape:grid
+       id="grid4"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="1.6"
+       spacingy="1.6"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Heart"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path5"
+       style="fill:#bf4040;stroke-width:0.264583"
+       d="m 26.383547,21.084697 c -2.044937,-0.01028 -4.094095,0.762774 -5.668904,2.321822 -3.149619,3.118096 -3.174943,8.163902 -0.05684,11.313521 L 31.914476,46.090406 43.285358,34.833728 c 3.149619,-3.118096 3.174942,-8.163902 0.05684,-11.313521 -3.118097,-3.14962 -8.163902,-3.174941 -11.313521,-0.05684 -1.559048,-1.574809 -3.600197,-2.368381 -5.645134,-2.378666 z" />
+  </g>
+</svg>

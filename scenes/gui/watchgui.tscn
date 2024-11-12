@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvupqtvx1tdg5"]
+
+[ext_resource type="Script" path="res://addons/BetterTabContainer/BetterTabContainer.gd" id="1_6vxq2"]
+[ext_resource type="Texture2D" uid="uid://b5q7h4psfxdyv" path="res://assets/textures/health_ring.svg" id="2_7xfps"]
+[ext_resource type="Texture2D" uid="uid://w3aqybu3vtwm" path="res://assets/textures/health.svg" id="2_b4ifp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11ji2"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 1024
+corner_radius_top_right = 1024
+corner_radius_bottom_right = 1024
+corner_radius_bottom_left = 1024
+
+[node name="WatchGUI" type="CanvasLayer"]
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="PanelContainer" parent="AspectRatioContainer"]
+clip_children = 2
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_11ji2")
+
+[node name="BetterTabContainer" type="ScrollContainer" parent="AspectRatioContainer/BG"]
+layout_mode = 2
+script = ExtResource("1_6vxq2")
+
+[node name="ColorRect" type="ColorRect" parent="AspectRatioContainer/BG/BetterTabContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.835294, 0, 0.396078, 0)
+
+[node name="TextureRect" type="TextureRect" parent="AspectRatioContainer/BG/BetterTabContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_b4ifp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CenterContainer" type="CenterContainer" parent="AspectRatioContainer/BG/BetterTabContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="AspectRatioContainer/BG/BetterTabContainer/ColorRect/CenterContainer"]
+layout_mode = 2
+value = 60.0
+fill_mode = 5
+texture_progress = ExtResource("2_7xfps")
+
+[node name="ColorRect2" type="ColorRect" parent="AspectRatioContainer/BG/BetterTabContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.353251, 0.363958, 0.777145, 1)
+
+[node name="Button" type="Button" parent="AspectRatioContainer/BG/BetterTabContainer/ColorRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_font_sizes/font_size = 24
+text = "Restart"
+
+[node name="ColorRect3" type="ColorRect" parent="AspectRatioContainer/BG/BetterTabContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.650558, 0.292085, 0.344372, 1)
+
+[node name="Button" type="Button" parent="AspectRatioContainer/BG/BetterTabContainer/ColorRect3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_font_sizes/font_size = 24
+text = "Quit"
