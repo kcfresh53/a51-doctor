@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://4ujuqo0mv8m7"]
+[gd_scene load_steps=44 format=3 uid="uid://4ujuqo0mv8m7"]
 
 [ext_resource type="Script" path="res://addons/godot-xr-tools/player/player_body.gd" id="1_78k16"]
 [ext_resource type="PackedScene" uid="uid://b8hc2ex21u8xj" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_physics_fullglove_low.tscn" id="2_8y6dm"]
@@ -23,60 +23,43 @@
 [ext_resource type="Texture2D" uid="uid://tgsw361qtcog" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="21_qoi6c"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="22_8a70g"]
 [ext_resource type="PackedScene" uid="uid://bs2jm62cmkbrk" path="res://addons/instant-realistic-light/light_scene.tscn" id="23_le5k5"]
+[ext_resource type="PackedScene" uid="uid://cpur7kek3h056" path="res://scenes/ItemTracker.tscn" id="24_fnidq"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_3fblo"]
 top_radius = 0.05
 bottom_radius = 0.05
 height = 0.05
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_uw717"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_svnvo"]
 animation = &"Grip"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_iytt0"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7lr3o"]
 animation = &"Grip"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_2dls6"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_cl2fa"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Little_Distal_R", "Armature/Skeleton3D:Little_Intermediate_R", "Armature/Skeleton3D:Little_Metacarpal_R", "Armature/Skeleton3D:Little_Proximal_R", "Armature/Skeleton3D:Middle_Distal_R", "Armature/Skeleton3D:Middle_Intermediate_R", "Armature/Skeleton3D:Middle_Metacarpal_R", "Armature/Skeleton3D:Middle_Proximal_R", "Armature/Skeleton3D:Ring_Distal_R", "Armature/Skeleton3D:Ring_Intermediate_R", "Armature/Skeleton3D:Ring_Metacarpal_R", "Armature/Skeleton3D:Ring_Proximal_R", "Armature/Skeleton3D:Thumb_Distal_R", "Armature/Skeleton3D:Thumb_Metacarpal_R", "Armature/Skeleton3D:Thumb_Proximal_R", "Armature/Skeleton:Little_Distal_R", "Armature/Skeleton:Little_Intermediate_R", "Armature/Skeleton:Little_Proximal_R", "Armature/Skeleton:Middle_Distal_R", "Armature/Skeleton:Middle_Intermediate_R", "Armature/Skeleton:Middle_Proximal_R", "Armature/Skeleton:Ring_Distal_R", "Armature/Skeleton:Ring_Intermediate_R", "Armature/Skeleton:Ring_Proximal_R", "Armature/Skeleton:Thumb_Distal_R", "Armature/Skeleton:Thumb_Proximal_R"]
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_45s2k"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_r51tl"]
 animation = &"Grip 5"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_7uhkb"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_s5kd4"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Index_Distal_R", "Armature/Skeleton3D:Index_Intermediate_R", "Armature/Skeleton3D:Index_Metacarpal_R", "Armature/Skeleton3D:Index_Proximal_R", "Armature/Skeleton:Index_Distal_R", "Armature/Skeleton:Index_Intermediate_R", "Armature/Skeleton:Index_Proximal_R"]
 
-[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_gyjpd"]
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_vmgwy"]
 graph_offset = Vector2(-552.664, 107.301)
-nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_uw717")
+nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_svnvo")
 nodes/ClosedHand1/position = Vector2(-600, 300)
-nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_iytt0")
+nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_7lr3o")
 nodes/ClosedHand2/position = Vector2(-360, 300)
-nodes/Grip/node = SubResource("AnimationNodeBlend2_2dls6")
+nodes/Grip/node = SubResource("AnimationNodeBlend2_cl2fa")
 nodes/Grip/position = Vector2(0, 40)
-nodes/OpenHand/node = SubResource("AnimationNodeAnimation_45s2k")
+nodes/OpenHand/node = SubResource("AnimationNodeAnimation_r51tl")
 nodes/OpenHand/position = Vector2(-600, 100)
-nodes/Trigger/node = SubResource("AnimationNodeBlend2_7uhkb")
+nodes/Trigger/node = SubResource("AnimationNodeBlend2_s5kd4")
 nodes/Trigger/position = Vector2(-360, 40)
 node_connections = [&"Grip", 0, &"Trigger", &"Grip", 1, &"ClosedHand2", &"Trigger", 0, &"OpenHand", &"Trigger", 1, &"ClosedHand1", &"output", 0, &"Grip"]
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_56khj"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_traqq"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_csv8v"]
-albedo_texture = ExtResource("13_gpbrl")
-uv1_scale = Vector3(5, 5, 5)
-
-[sub_resource type="Resource" id="Resource_upqrg"]
-script = ExtResource("17_1wth2")
-open_pose = ExtResource("16_3hgt5")
-closed_pose = ExtResource("16_3hgt5")
-
-[sub_resource type="Resource" id="Resource_p6n2w"]
-script = ExtResource("17_1wth2")
-open_pose = ExtResource("19_yic5s")
-closed_pose = ExtResource("19_yic5s")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_00ofs"]
 size = Vector2(100, 100)
@@ -121,6 +104,24 @@ auto_exposure_speed = 0.8
 dof_blur_far_distance = 1.44
 dof_blur_near_distance = 0.01
 auto_exposure_min_sensitivity = 8.01
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_56khj"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_traqq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_csv8v"]
+albedo_texture = ExtResource("13_gpbrl")
+uv1_scale = Vector3(5, 5, 5)
+
+[sub_resource type="Resource" id="Resource_upqrg"]
+script = ExtResource("17_1wth2")
+open_pose = ExtResource("16_3hgt5")
+closed_pose = ExtResource("16_3hgt5")
+
+[sub_resource type="Resource" id="Resource_p6n2w"]
+script = ExtResource("17_1wth2")
+open_pose = ExtResource("19_yic5s")
+closed_pose = ExtResource("19_yic5s")
 
 [node name="Main" type="Node3D"]
 
@@ -255,7 +256,7 @@ bone_idx = 9
 
 [node name="AnimationTree" parent="XROrigin3D/RightController/RightPhysicsHand" index="1"]
 root_node = NodePath("../Hand_low_R")
-tree_root = SubResource("AnimationNodeBlendTree_gyjpd")
+tree_root = SubResource("AnimationNodeBlendTree_vmgwy")
 
 [node name="MovementTurn" parent="XROrigin3D/RightController" instance=ExtResource("9_dnwec")]
 
@@ -267,26 +268,6 @@ laser_length = 1
 show_target = true
 
 [node name="MovementJog" parent="XROrigin3D" instance=ExtResource("11_j4jux")]
-
-[node name="PickableObject" parent="." instance=ExtResource("12_odwoi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41277, -1.75168)
-
-[node name="CollisionShape3D" parent="PickableObject" index="0"]
-shape = SubResource("SphereShape3D_56khj")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="PickableObject"]
-mesh = SubResource("SphereMesh_traqq")
-surface_material_override/0 = SubResource("StandardMaterial3D_csv8v")
-
-[node name="HighlightRing" parent="PickableObject" instance=ExtResource("14_pt7hq")]
-
-[node name="GrabPointHandLeft" parent="PickableObject" instance=ExtResource("15_gap2c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.516634, 0, -0.0887792)
-hand_pose = SubResource("Resource_upqrg")
-
-[node name="GrabPointHandRight" parent="PickableObject" instance=ExtResource("18_rwsy6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.513772, 0, 0)
-hand_pose = SubResource("Resource_p6n2w")
 
 [node name="Viewport2Din3D" parent="." instance=ExtResource("5_7tsmf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.72151, -4.39545)
@@ -308,6 +289,28 @@ shape = SubResource("WorldBoundaryShape3D_s0a2v")
 [node name="WorldEnvironment" parent="." instance=ExtResource("23_le5k5")]
 environment = SubResource("Environment_f8w8m")
 camera_attributes = SubResource("CameraAttributesPractical_qo5hu")
+
+[node name="ItemTracker" parent="." instance=ExtResource("24_fnidq")]
+
+[node name="PickableObject" parent="." instance=ExtResource("12_odwoi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41277, -1.75168)
+
+[node name="CollisionShape3D" parent="PickableObject" index="0"]
+shape = SubResource("SphereShape3D_56khj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PickableObject"]
+mesh = SubResource("SphereMesh_traqq")
+surface_material_override/0 = SubResource("StandardMaterial3D_csv8v")
+
+[node name="HighlightRing" parent="PickableObject" instance=ExtResource("14_pt7hq")]
+
+[node name="GrabPointHandLeft" parent="PickableObject" instance=ExtResource("15_gap2c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.516634, 0, -0.0887792)
+hand_pose = SubResource("Resource_upqrg")
+
+[node name="GrabPointHandRight" parent="PickableObject" instance=ExtResource("18_rwsy6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.513772, 0, 0)
+hand_pose = SubResource("Resource_p6n2w")
 
 [editable path="XROrigin3D/RightController/RightPhysicsHand"]
 [editable path="XROrigin3D/RightController/RightPhysicsHand/Hand_low_R"]
