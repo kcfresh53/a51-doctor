@@ -1,0 +1,5 @@
+XRToolsGrabPointHand
+MeshInstance3D
+CollisionShape3D
+XRToolsPickable
+StaticBody3D
